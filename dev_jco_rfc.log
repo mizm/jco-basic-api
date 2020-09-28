@@ -1,0 +1,584 @@
+
+**** Error file opened at 20200925 143529 Korea Standard Time Rel. 3.1.2 (2019-10-02) [753.512]
+Exception thrown [Fri Sep 25 14:35:29,089]: JNI call SAP_CMMAXCONV returns 20 with message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:35:29 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+Info:     >Fri Sep 25 14:35:29,102<    [JCoAPI] Exception while setting system property to JCo property: jco.cpic_maxconv=202 com.sap.conn.jco.JCoRuntimeException: (108) JCO_ERROR_INTERNAL: Value 202 for property jco.cpic_maxconv caused 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:35:29 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:680)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.processPublicProperty(DefaultJCoRuntime.java:236)
+	at com.sap.conn.jco.rt.JCoRuntime.setSystemProperty(JCoRuntime.java:258)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.readSystemProperties(DefaultJCoRuntime.java:115)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:24)
+	at com.sap.conn.jco.rt.RuntimeEnvironment.<init>(RuntimeEnvironment.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sap.conn.jco.ext.Environment.getInstance(Environment.java:164)
+	at com.sap.conn.jco.ext.Environment.registerDestinationDataProvider(Environment.java:308)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.getSapConnection(SapRfcServiceInterfaceImpl.java:85)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.sapRfcCall(SapRfcServiceInterfaceImpl.java:21)
+	at com.ildong.jco.sap.ui.BoardRestController.sapRfcCall(BoardRestController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RfcException raised by system [<unknown>]:
+	message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:35:29 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 108
+	key: RFC_ERROR_INTERNAL
+	at com.sap.conn.rfc.driver.CpicDriver.setCpicMaxConv(CpicDriver.java:1005)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.setCpicMaxConv(DefaultRfcRuntime.java:148)
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:654)
+	... 65 more
+
+
+
+**** Error file opened at 20200925 143616 Korea Standard Time Rel. 3.1.2 (2019-10-02) [753.512]
+Exception thrown [Fri Sep 25 14:36:16,420]: JNI call SAP_CMMAXCONV returns 20 with message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:36:16 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+Info:     >Fri Sep 25 14:36:16,433<    [JCoAPI] Exception while setting system property to JCo property: jco.cpic_maxconv=202 com.sap.conn.jco.JCoRuntimeException: (108) JCO_ERROR_INTERNAL: Value 202 for property jco.cpic_maxconv caused 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:36:16 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:680)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.processPublicProperty(DefaultJCoRuntime.java:236)
+	at com.sap.conn.jco.rt.JCoRuntime.setSystemProperty(JCoRuntime.java:258)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.readSystemProperties(DefaultJCoRuntime.java:115)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:24)
+	at com.sap.conn.jco.rt.RuntimeEnvironment.<init>(RuntimeEnvironment.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sap.conn.jco.ext.Environment.getInstance(Environment.java:164)
+	at com.sap.conn.jco.ext.Environment.registerDestinationDataProvider(Environment.java:308)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.getSapConnection(SapRfcServiceInterfaceImpl.java:86)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.sapRfcCall(SapRfcServiceInterfaceImpl.java:21)
+	at com.ildong.jco.sap.ui.BoardRestController.sapRfcCall(BoardRestController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RfcException raised by system [<unknown>]:
+	message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:36:16 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 108
+	key: RFC_ERROR_INTERNAL
+	at com.sap.conn.rfc.driver.CpicDriver.setCpicMaxConv(CpicDriver.java:1005)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.setCpicMaxConv(DefaultRfcRuntime.java:148)
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:654)
+	... 65 more
+
+
+
+**** Error file opened at 20200925 143722 Korea Standard Time Rel. 3.1.2 (2019-10-02) [753.512]
+Exception thrown [Fri Sep 25 14:37:22,511]: JNI call SAP_CMMAXCONV returns 20 with message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:37:22 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+Info:     >Fri Sep 25 14:37:22,526<    [JCoAPI] Exception while setting system property to JCo property: jco.cpic_maxconv=202 com.sap.conn.jco.JCoRuntimeException: (108) JCO_ERROR_INTERNAL: Value 202 for property jco.cpic_maxconv caused 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:37:22 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:680)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.processPublicProperty(DefaultJCoRuntime.java:236)
+	at com.sap.conn.jco.rt.JCoRuntime.setSystemProperty(JCoRuntime.java:258)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.readSystemProperties(DefaultJCoRuntime.java:115)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:24)
+	at com.sap.conn.jco.rt.RuntimeEnvironment.<init>(RuntimeEnvironment.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sap.conn.jco.ext.Environment.getInstance(Environment.java:164)
+	at com.sap.conn.jco.ext.Environment.registerDestinationDataProvider(Environment.java:308)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.getSapConnection(SapRfcServiceInterfaceImpl.java:86)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.sapRfcCall(SapRfcServiceInterfaceImpl.java:21)
+	at com.ildong.jco.sap.ui.BoardRestController.sapRfcCall(BoardRestController.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RfcException raised by system [<unknown>]:
+	message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:37:22 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 108
+	key: RFC_ERROR_INTERNAL
+	at com.sap.conn.rfc.driver.CpicDriver.setCpicMaxConv(CpicDriver.java:1005)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.setCpicMaxConv(DefaultRfcRuntime.java:148)
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:654)
+	... 65 more
+
+
+
+**** Error file opened at 20200925 143907 Korea Standard Time Rel. 3.1.2 (2019-10-02) [753.512]
+Exception thrown [Fri Sep 25 14:39:07,632]: JNI call SAP_CMMAXCONV returns 20 with message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:39:07 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+Info:     >Fri Sep 25 14:39:07,647<    [JCoAPI] Exception while setting system property to JCo property: jco.cpic_maxconv=202 com.sap.conn.jco.JCoRuntimeException: (108) JCO_ERROR_INTERNAL: Value 202 for property jco.cpic_maxconv caused 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:39:07 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:680)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.processPublicProperty(DefaultJCoRuntime.java:236)
+	at com.sap.conn.jco.rt.JCoRuntime.setSystemProperty(JCoRuntime.java:258)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.readSystemProperties(DefaultJCoRuntime.java:115)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:24)
+	at com.sap.conn.jco.rt.RuntimeEnvironment.<init>(RuntimeEnvironment.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sap.conn.jco.ext.Environment.getInstance(Environment.java:164)
+	at com.sap.conn.jco.ext.Environment.registerDestinationDataProvider(Environment.java:308)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.getSapConnection(SapRfcServiceInterfaceImpl.java:86)
+	at com.ildong.jco.sap.infra.SapRfcServiceInterfaceImpl.sapRfcCall(SapRfcServiceInterfaceImpl.java:21)
+	at com.ildong.jco.sap.ui.BoardRestController.sapRfcCall(BoardRestController.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RfcException raised by system [<unknown>]:
+	message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:39:07 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: '양도혁' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 108
+	key: RFC_ERROR_INTERNAL
+	at com.sap.conn.rfc.driver.CpicDriver.setCpicMaxConv(CpicDriver.java:1005)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.setCpicMaxConv(DefaultRfcRuntime.java:148)
+	at com.sap.conn.jco.rt.JCoRuntime.processPublicProperty(JCoRuntime.java:654)
+	... 65 more
+
+
+Error:     >Fri Sep 25 14:39:08,993<    RfcException raised by system [<unknown>]:
+	message: Connect to SAP gateway failed
+	Connection parameters: TYPE=A DESTINATION=ZILD_SD6 ASHOST=172.16.17.16 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '양도혁' unknown
+TIME        Fri Sep 25 14:39:08 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxhl.cpp
+LINE        198
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20200928 084056 Korea Standard Time Rel. 3.1.2 (2019-10-02) [753.512]
+Error:     >Mon Sep 28 08:40:56,691<    >RfcGetException (rc=3) message: CPIC-CALL: CMRCV on convId: 66243440
+
+ERROR       connection to partner '172.16.17.16:3300' broken
+TIME        Mon Sep 28 08:40:56 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        4867
+DETAIL      NiIWrite: P=172.16.17.16:3300; L=192.168.101.51:50521
+SYSTEM CALL WSASend
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+<RfcGetException
+
+
+Error: [1]    >Mon Sep 28 08:40:56,693<    RfcException raised by system [IFD|i4devsapap|00]:
+	message: CPIC-CALL: CMRCV on convId: 66243440
+
+ERROR       connection to partner '172.16.17.16:3300' broken
+TIME        Mon Sep 28 08:40:56 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        4867
+DETAIL      NiIWrite: P=172.16.17.16:3300; L=192.168.101.51:50521
+SYSTEM CALL WSASend
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+	return code: RFC_SYS_EXCEPTION (3)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:     >Mon Sep 28 08:41:38,896<    >RfcGetException (rc=3) message: CPIC-CALL: CMRCV on convId: 66244609
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '172.16.17.16:3300' broken
+TIME        Mon Sep 28 08:41:38 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        4867
+DETAIL      NiIWrite: P=172.16.17.16:3300; L=192.168.101.51:50522
+SYSTEM CALL WSASend
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+<RfcGetException
+
+
+Error: [2]    >Mon Sep 28 08:41:38,897<    RfcException raised by system [IFD|i4devsapap|00]:
+	message: CPIC-CALL: CMRCV on convId: 66244609
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '172.16.17.16:3300' broken
+TIME        Mon Sep 28 08:41:38 2020
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        4867
+DETAIL      NiIWrite: P=172.16.17.16:3300; L=192.168.101.51:50522
+SYSTEM CALL WSASend
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+	return code: RFC_SYS_EXCEPTION (3)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
