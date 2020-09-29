@@ -14,12 +14,12 @@ import java.util.ArrayList;
 
 @Slf4j
 @RestController
-public class BoardRestController {
+public class SapRestController {
 
     final private SapRfcCallUseCase sapRfcCallUseCase;
 
     @Autowired
-    public BoardRestController(SapRfcCallUseCase sapRfcCallUseCase) {
+    public SapRestController(SapRfcCallUseCase sapRfcCallUseCase) {
         this.sapRfcCallUseCase = sapRfcCallUseCase;
     }
 
