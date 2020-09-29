@@ -25,7 +25,7 @@ public class SapRestController {
 
     //mapping에는 풀 경로를 다 적는게 좋음
     @PostMapping(value = "/api/v1/sap/rfc")
-        ResponseEntity sapRfcCall(@RequestBody SapInputDTO sapInputDTO) throws JCoException {
+    ResponseEntity sapRfcCall(@RequestBody SapInputDTO sapInputDTO) throws JCoException {
 //        log.info("######{}",sapInputDTO.getImportFields().get("test") instanceof ArrayList);
         return new ResponseEntity<>(sapRfcCallUseCase.sapRfcCall(sapInputDTO), HttpStatus.OK);
     }
