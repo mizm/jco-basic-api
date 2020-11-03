@@ -1,11 +1,11 @@
 # JCO BASIC API
-
+SAP RFC(Remote Function Call) 호출 API
 
 ## IDEA
 Intellij IDEA
 
 ## DATABASE
-
+-
 
 ## 호출 스택 예시
 POST
@@ -15,6 +15,9 @@ functionName : call 할 function 명
 importFields : import 탭에 내용
 importChangings : changings 내용
 importTables : table 내용 table은 [] list 로 표기
+
+
+Request Example 1.
 ```json
 {
     "accessInfo" : {
@@ -33,7 +36,9 @@ importTables : table 내용 table은 [] list 로 표기
          "I_LPRIO" : "24"
     }
 }
-
+```
+Request Example 2.
+```json
 {
     "accessInfo" : {
     },
