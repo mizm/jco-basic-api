@@ -28,7 +28,7 @@ public class SapRfcServiceInterfaceImpl implements SapRfcServiceInterface {
         JCoFunction jcoFunction = ftemplate.getFunction();
 
         if (jcoFunction == null)
-            throw new RuntimeException("ZSD_MAKE_SO_IF not found in SAP.");
+            throw new RuntimeException("Function Name : " + input.getFunctionName() + " is not found in SAP.");
 
 
         // import parameter 넣기
@@ -43,7 +43,6 @@ public class SapRfcServiceInterfaceImpl implements SapRfcServiceInterface {
         }
         // import table
         if(input.getImportTables() != null) {
-            log.info("#################################################################");
             JCoParameterList importTableList = jcoFunction.getTableParameterList();
             mapToJco(importTableList, input.getImportTables());
         }
@@ -51,9 +50,9 @@ public class SapRfcServiceInterfaceImpl implements SapRfcServiceInterface {
         jcoFunction.execute(dest);
 
         SapOutputDTO res = new SapOutputDTO();
-        res.setExportTables(mapToMap(jcoFunction.getTableParameterList()));
-        res.setExportFields(mapToMap(jcoFunction.getExportParameterList()));
-        res.setExportChangings(mapToMap(jcoFunction.getChangingParameterList()));
+        res.setExportTables(jcoToMap(jcoFunction.getTableParameterList()));
+        res.setExportFields(jcoToMap(jcoFunction.getExportParameterList()));
+        res.setExportChangings(jcoToMap(jcoFunction.getChangingParameterList()));
         return res;
     }
 
@@ -80,7 +79,7 @@ public class SapRfcServiceInterfaceImpl implements SapRfcServiceInterface {
             }
         }
     }
-    private Map<String, Object> mapToMap(final JCoRecord record) {
+    private Map<String, Object> jcoToMap(final JCoRecord record) {
         final Map<String, Object> map = new HashMap<>();
         if (record == null) {
             return map;
@@ -94,13 +93,13 @@ public class SapRfcServiceInterfaceImpl implements SapRfcServiceInterface {
             final String sapFieldName = jcoField.getName();
 
             if (jcoField.isStructure()) {
-                map.put(sapFieldName, mapToMap(jcoField.getStructure()));
+                map.put(sapFieldName, jcoToMap(jcoField.getStructure()));
             } else if (jcoField.isTable()) {
                 final List<Map<String, Object>> list = new ArrayList<>();
                 final JCoTable table = jcoField.getTable();
                 for (int j = 0; j < table.getNumRows(); j++) {
                     table.setRow(j);
-                    list.add(mapToMap(table));
+                    list.add(jcoToMap(table));
                 }
                 map.put(sapFieldName, list);
             } else {

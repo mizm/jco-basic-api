@@ -8,21 +8,12 @@ import java.util.Map;
 
 @Getter
 @Setter
-//@XmlRootElement(name = "row")
-//@XmlAccessorType(XmlAccessType.FIELD)
 public class SapInputDTO {
     private AccessInfo accessInfo;
     private String functionName;
     private Map<String,Object> importFields;
     private Map<String,Object> importChangings;
     private Map<String,Object> importTables;
-//    private String statnNm;
-//    private String subwayId;
-//    private String subwayNm;
-//    private double x;
-//    private double y;
-//    private int ord;
-
 }
 
 /*
