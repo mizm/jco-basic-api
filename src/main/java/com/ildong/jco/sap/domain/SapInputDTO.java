@@ -23,12 +23,12 @@ public class SapInputDTO {
         "host" : "172.16.17.16",
         "systemNumber" : "00",
         "clientNumber" : "400",
-        "userId" : "ZILD_SD6",
-        "userPw" : "dbswlgh!12",
+        "userId" : "",
+        "userPw" : "",
         "language" : "KO",
         "type" : "3"
     },
-    "functionName" : "ZSD_SND_DELIVERY_DOC",
+    "functionName" : "functionName",
     "importFields" : {
          "I_WADAT" : "20200824",
          "I_BEROT" : "01",
@@ -42,12 +42,12 @@ public class SapInputDTO {
         "host" : "172.16.17.16",
         "systemNumber" : "00",
         "clientNumber" : "400",
-        "userId" : "ZILD_SD6",
-        "userPw" : "dbswlgh!12",
+        "userId" : "",
+        "userPw" : "",
         "language" : "KO",
         "type" : "3"
     },
-    "functionName" : "ZSD_RCV_DELIVERY_STATUS",
+    "functionName" : "functionName",
     "importTables" : {
         "IT_ITEM" : [
             {
